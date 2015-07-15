@@ -5,7 +5,7 @@ class CreateStudents < ActiveRecord::Migration
       t.string :email
       t.string :about
       t.float :gpa, default: 0.0
-      t.string, :gender
+      t.string :gender
       t.belongs_to :account
 
       t.timestamps null: false

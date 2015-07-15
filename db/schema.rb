@@ -43,9 +43,11 @@ ActiveRecord::Schema.define(version: 20150715020117) do
     t.string   "name"
     t.string   "email"
     t.string   "about"
+    t.float    "gpa",        default: 0.0
+    t.string   "gender"
     t.integer  "account_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
 end
